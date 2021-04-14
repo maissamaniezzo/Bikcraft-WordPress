@@ -7,7 +7,8 @@
         
         <?php include(TEMPLATEPATH . "/inc/introducao.php") ?>
 
-        <section  data-anime="1200" class="fadeInDown missao_sobre container">
+        <!-- <section  data-anime="1200" class="fadeInDown missao_sobre container"> -->
+        <section  class="fadeInDown missao_sobre container">
             <div class="grid-10">
                 <h2 class="subtitulo-interno">História, Missão e Visão</h2>
                 <p>No mundo atual, a contínua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora da qual fazemos parte da qual fazemos parte.</p>

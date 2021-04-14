@@ -7,7 +7,8 @@
         
         <?php include(TEMPLATEPATH . "/inc/introducao.php") ?>
 
-        <section data-anime="1200" class="fadeInDown container produto_item">
+        <!-- <section data-anime="1200" class="fadeInDown container produto_item"> -->
+        <section class="fadeInDown container produto_item">
             <div class="grid-11">
                 <img src="img/produtos/bikcraft-passeio-1.jpg" alt="Bikcraft Passeio">
                 <h2>Passeio</h2>

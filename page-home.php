@@ -6,17 +6,21 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <section class="introducao">
             <div class="container">
-                <h1 data-anime="400" class="fadeInDown">Bicicletas Feitas a Mão</h1>
-                <blockquote data-anime="800" class="fadeInDown quote-externo">
+                <!-- <h1 data-anime="400" class="fadeInDown">Bicicletas Feitas a Mão</h1> -->
+                <h1 class="fadeInDown">Bicicletas Feitas a Mão</h1>
+                <!-- <blockquote data-anime="800" class="fadeInDown quote-externo"> -->
+                <blockquote class="fadeInDown quote-externo">
                     <p>"Não tenha nada em sua casa que você não considere útil ou acredita ser bonito"</p>
                     <cite>WILLIAM MORRIS</cite>
                 </blockquote>
-                <a data-anime="1200" href="produtos.html" class="btn">Orçamento</a>
+                <!-- <a data-anime="1200" href="produtos.html" class="btn">Orçamento</a> -->
+                <a href="produtos.html" class="btn">Orçamento</a>
             </div>
         </section>
         <!-- Fecha introdução -->
 
-        <section data-anime="1600" class="fadeInDown produtos container">
+        <!-- <section data-anime="1600" class="fadeInDown produtos container"> -->
+        <section class="fadeInDown produtos container">
             <h2 class="subtitulo">Produtos</h2>
 
             <ul class="produtos_lista">

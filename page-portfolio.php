@@ -7,7 +7,8 @@
         
         <?php include(TEMPLATEPATH . "/inc/introducao.php") ?>
 
-        <section class="container fadeInDown" data-slide="quote" data-anime="1200">
+        <!-- <section class="container fadeInDown" data-slide="quote" data-anime="1200"> -->
+        <section class="container fadeInDown" data-slide="quote">
             <blockquote class="quote_cliente">
                 <p>"Pedalar sempre foi minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo."</p>
                 <cite>Barbara Moss</cite>
