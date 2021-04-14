@@ -8,7 +8,7 @@
         <?php include(TEMPLATEPATH . "/inc/introducao.php") ?>
 
         <!-- <section class="container fadeInDown" data-slide="quote" data-anime="1200"> -->
-        <section class="container fadeInDown" data-slide="quote">
+        <section class="container fadeInDown">
             <blockquote class="quote_cliente">
                 <p>"Pedalar sempre foi minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo."</p>
                 <cite>Barbara Moss</cite>
@@ -24,19 +24,12 @@
         </section>
 
         <section class="portfolio" >
-            <div class="container" data-slide="portfolio">
-                <ul class="portfolio_lista">
-                    <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
-                    <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
-                    <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
-                </ul>
-                <ul class="portfolio_lista">
-                    <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
-                    <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
-                    <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
-                </ul>
+            <!-- <div class="container" data-slide="portfolio"> -->
+            <div class="container">
+            <?php include(TEMPLATEPATH . "/inc/clientes-portfolio.php") ?>
             </div>
         </section>
+
 <?php endwhile; else: endif; ?>
 
 <?php get_footer(); ?>
