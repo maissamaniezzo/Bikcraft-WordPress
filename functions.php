@@ -1,5 +1,24 @@
 <?php
 
+// Função pra registrar os Scripts e CSS
+function origamid_scripts() {
+	wp_register_script( 'simple-anime', get_template_directory_uri() . '/js/simple-anime.js', array(), false, true );
+	wp_register_script( 'simple-slide', get_template_directory_uri() . '/js/simple-slide.js', array(), false, true );
+	wp_register_script( 'simple-form', get_template_directory_uri() . '/js/simple-form.js', array(), false, true );
+	wp_register_script( 'main-script', get_template_directory_uri() . '/js/script.js', array( 'simple-anime', 'simple-slide', 'simple-form' ), false, true );
+
+	wp_enqueue_script('main-script');
+}
+add_action( 'wp_enqueue_scripts', 'origamid_scripts' );
+
+function origamid_css() {
+	wp_register_style( 'origamid_style', get_template_directory_uri() . '/style.css', [], false, false);
+
+	wp_enqueue_style( 'origamid_style' );
+}
+add_action( 'wp_enqueue_scripts', 'origamid_css' );
+
+
 // Funções para Limpar o Header
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wlwmanifest_link');

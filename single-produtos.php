@@ -5,8 +5,7 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <!-- <section data-anime="1200" class="fadeInDown container produto_item"> -->
-        <section class="container produto_item">
+        <section class="container produto_item fadeInDown" data-anime="400">
             <div class="grid-11">
                 <img src="<?php the_field('foto_produto1'); ?>" alt="Bikcraft <?php the_title(); ?>">
                 <h2><?php the_title(); ?></h2>

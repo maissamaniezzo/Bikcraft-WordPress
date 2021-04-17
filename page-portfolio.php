@@ -7,8 +7,7 @@
         
         <?php include(TEMPLATEPATH . "/inc/introducao.php") ?>
 
-        <!-- <section class="container fadeInDown" data-slide="quote" data-anime="1200"> -->
-        <section class="container fadeInDown">
+        <section class="container fadeInDown" data-slide="quote" data-anime="1200">
             <?php if(have_rows('quote_portfolio')): while(have_rows('quote_portfolio')) : the_row(); ?>
                 <blockquote class="quote_cliente">
                     <?php the_sub_field('quote'); ?>
@@ -18,9 +17,8 @@
         </section>
 
         <section class="portfolio" >
-            <!-- <div class="container" data-slide="portfolio"> -->
             <div class="container">
-            <?php include(TEMPLATEPATH . "/inc/clientes-portfolio.php") ?>
+                <?php include(TEMPLATEPATH . "/inc/clientes-portfolio.php") ?>
             </div>
         </section>
 

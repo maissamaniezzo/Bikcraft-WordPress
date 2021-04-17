@@ -27,21 +27,17 @@
 
         <section class="introducao">
             <div class="container">
-                <!-- <h1 data-anime="400" class="fadeInDown">Bicicletas Feitas a Mão</h1> -->
-                <h1 class="fadeInDown"><?php the_field('titulo_introducao'); ?></h1>
-                <!-- <blockquote data-anime="800" class="fadeInDown quote-externo"> -->
-                <blockquote class="fadeInDown quote-externo">
+                <h1 data-anime="400" class="fadeInDown"><?php the_field('titulo_introducao'); ?></h1>
+                <blockquote data-anime="800" class="fadeInDown quote-externo">
                     <p><?php the_field('quote_introducao'); ?></p>
                     <cite><?php the_field('citacao_introducao'); ?></cite>
                 </blockquote>
-                <!-- <a data-anime="1200" href="produtos.html" class="btn">Orçamento</a> -->
-                <a href="/bikcraft/produtos/" class="btn">Orçamento</a>
+                <a data-anime="1200" href="<?php bloginfo('url'); ?>/produtos/" class="btn">Orçamento</a>
             </div>
         </section>
         <!-- Fecha introdução -->
 
-        <!-- <section data-anime="1600" class="fadeInDown produtos container"> -->
-        <section class="fadeInDown produtos container">
+        <section data-anime="1600" class="produtos container fadeInDown">
             <h2 class="subtitulo">Produtos</h2>
 
             <ul class="produtos_lista">
@@ -70,7 +66,7 @@
 
             <div class="call">
                 <p><?php the_field('chamada_produtos'); ?></p>
-                <a href="/bikcraft/produtos/" class="btn btn-preto">Produtos</a>
+                <a href="<?php bloginfo('url'); ?>/produtos/" class="btn btn-preto">Produtos</a>
             </div>
         </section>
         <!-- Fecha produtos -->
