@@ -140,6 +140,10 @@ img {
     color: #fff;
 }
 
+.header_menu ul li.current_page_item a {
+    color: #FFF;
+}
+
 
 /* Introdução */
 
@@ -583,12 +587,8 @@ img {
     .header_menu ul li a:hover {
         border-color: #fff;
     }
+
     
-    .header_menu ul li.current_page_item a {
-        color: #fff;
-    }
-
-
     
     /* Introdução */
     
