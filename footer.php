@@ -26,18 +26,8 @@
                     </div>
 
                     <div class="grid-4 footer_redes">
-                        <h3>Contato</h3>
-                        <ul>
-                            <li><a href="http://facebook.com" target="blanck">
-                                <img src="img/redes-sociais/facebook.svg" alt="Facebook">
-                            </a></li>
-                            <li><a href="http://instagram.com" target="blanck">
-                                <img src="img/redes-sociais/instagram.svg" alt="Instagram">
-                            </a></li>
-                            <li><a href="http://twitter.com" target="blanck">
-                                <img src="img/redes-sociais/twitter.svg" alt="Twitter">
-                            </a></li>
-                        </ul>
+                        <h3>Redes Sociais</h3>
+                        <?php include(TEMPLATEPATH . "/inc/redes-sociais.php"); ?>
                     </div>
 
                 </div>
