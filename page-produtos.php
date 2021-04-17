@@ -83,20 +83,7 @@
                     <textarea id="mensagem" name="mensagem" required></textarea>
                     <button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
                 </form>
-                <div class="orcamento_dados grid-8">
-                    <h3>Dados</h3>
-                    <span>+55 21 93223 3232</span>
-                    <span>orcamento@bikcraft.com</span>
-                    <h3>Monte sua bikcraft</h3>
-                    <p>Escolha as especificações:</p>
-                    <ul>
-                        <li>- Cores</li>
-                        <li>- Estilo</li>
-                        <li>- Medidas</li>
-                        <li>- Acessórios</li>
-                        <li>- E outros</li>
-                    </ul>
-                </div>
+                <?php include(TEMPLATEPATH . "/inc/produtos-orcamento.php") ?>
             </div>
         </section>
         <!-- Fecha orçamento -->

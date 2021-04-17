@@ -7,19 +7,13 @@
 
         <section class="container produto_item">
             <div class="grid-11">
-                <img src="img/produtos/bikcraft-retro-1.jpg" alt="Bikcraft Retro">
-                <h2>Retro</h2>
+                <img src="<?php the_field('foto_produto1'); ?>" alt="Bikcraft <?php the_title(); ?>">
+                <h2><?php the_title(); ?></h2>
             </div>
-            <div class="grid-5 produto_icone"><img src="img/produtos/retro.svg" alt="Logo Bikcraft Retro"></div>
-            <div class="grid-8"><img src="img/produtos/bikcraft-retro-2.jpg" alt="Bikcraft Retro"></div>
+            <div class="grid-5 produto_icone"><img src="<?php the_field('icone_produto'); ?>" alt="Logo Bikcraft <?php the_title(); ?>"></div>
+            <div class="grid-8"><img src="<?php the_field('foto_produto2'); ?>" alt="Bikcraft <?php the_title(); ?>"></div>
             <div class="grid-8 produto_info">
-                <p>No mundo atual, a contínua expansão de nossa atividade cumpre um papel essencial na fórmula da gestão inovadora da qual fazemos parte inovadora da qual fazemos parte.</p>
-                <ul>
-                    <li>Conforto</li>
-                    <li>Velocidade</li>
-                    <li>Desing</li>
-                    <li>Versatilidade</li>
-                </ul>
+            <?php the_content(); ?>
             </div>
         </section>
         <!-- Fecha produtos -->
@@ -44,20 +38,7 @@
                     <textarea id="mensagem" name="mensagem" required></textarea>
                     <button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
                 </form>
-                <div class="orcamento_dados grid-8">
-                    <h3>Dados</h3>
-                    <span>+55 21 93223 3232</span>
-                    <span>orcamento@bikcraft.com</span>
-                    <h3>Monte sua bikcraft</h3>
-                    <p>Escolha as especificações:</p>
-                    <ul>
-                        <li>- Cores</li>
-                        <li>- Estilo</li>
-                        <li>- Medidas</li>
-                        <li>- Acessórios</li>
-                        <li>- E outros</li>
-                    </ul>
-                </div>
+                <?php include(TEMPLATEPATH . "/inc/produtos-orcamento.php") ?>
             </div>
         </section>
         <!-- Fecha orçamento -->
