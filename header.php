@@ -29,16 +29,18 @@
 
         <header class="header">
             <div class="container">
-                <a href="/bikecraft/" class="grid-4">
+                <a href="/bikcraft/" class="grid-4">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/bikcraft.svg" alt="Bikcraft">
                 </a>
                 <nav class="header_menu grid-12">
-                    <ul>
-                        <li><a href="/bikcraft/sobre">Sobre</a></li>
-                        <li><a href="/bikcraft/produtos">Produtos</a></li>
-                        <li><a href="/bikcraft/portfolio">Portfólio</a></li>
-                        <li><a href="/bikcraft/contato">Contato</a></li>
-                    </ul>
+                <?php
+                    $args = array(
+                        'menu' => 'principal',
+                        'theme_location' => 'menu-principal',
+                        'container' => false
+                    );
+                    wp_nav_menu( $args );
+                ?>
                 </nav>
             </div>
         </header>
