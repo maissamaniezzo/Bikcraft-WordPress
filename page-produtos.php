@@ -16,17 +16,19 @@
         ?>
 
         <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-            <a href="<?php the_permalink(); ?>">
-                <section class="container produto_item">
+            <section class="container produto_item">
+                <a href="<?php the_permalink(); ?>">
                     <div class="grid-11">
                         <img src="<?php the_field('foto_produto1'); ?>" alt="Bikcraft <?php the_title(); ?>">
                         <h2><?php the_title(); ?></h2>
                     </div>
                     <div class="grid-5 produto_icone"><img src="<?php the_field('icone_produto'); ?>" alt="Logo Bikcraft <?php the_title(); ?>"></div>
-                </section>
-            </a>
+                </a>
+            </section>
         <?php endwhile; else: endif; ?>
         <!-- Fecha produtos -->
+        <!-- Reset o Loop -->
+        <?php wp_reset_query(); wp_reset_postdata(); ?>
 
         <?php include(TEMPLATEPATH . "/inc/produtos-orcamento.php") ?>
         <!-- Fecha orçamento -->
