@@ -1,7 +1,7 @@
 <section class="orcamento">
     <div class="container">
     <h2 class="subtitulo">Orçamento</h2>
-    <form id="form_orcamento" method="POST" action="<?php echo get_tempalte_directory_uri(); ?>/enviar.php" class="form grid-8 formphp">
+    <form id="form_orcamento" method="POST" action="<?php echo get_template_directory_uri(); ?>/enviar.php" class="form grid-8 formphp">
         <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome" required>
         <label for="email">Email</label>
