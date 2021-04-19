@@ -13,6 +13,6 @@
 <?php if (!is_page('portfolio')) { ?>
     <div class="call">
         <p><?php the_field('chamada_portfolio', $portfolio); ?></p>
-        <a href="/bikcraft/portfolio/" class="btn">Portfólio</a>
+        <a href="<?php bloginfo('url'); ?>/portfolio/" class="btn">Portfólio</a>
     </div>
 <?php } ?>
